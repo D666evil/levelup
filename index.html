@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="tasksBtn" onclick="showSection('tasks')" class="hidden">Tasks</button>
+        <button id="profileBtn" onclick="showSection('profile')" class="hidden">Profile</button>
+    </nav>
+
+    <section id="home" class="section">
+        <h1>Welcome to the Level Up System</h1>
+        <label for="playerName">Name: </label>
+        <input type="text" id="playerName">
+        <label for="playerJob">Job Title: </label>
+        <input type="text" id="playerJob">
+        <button onclick="updatePlayerInfo()">Update Info</button>
+    </section>
+
+    <section id="tasks" class="section hidden">
+        <h1>Tasks</h1>
+        <label for="taskName">Task Name: </label>
+        <input type="text" id="taskName">
+        <label for="taskXP">XP: </label>
+        <input type="number" id="taskXP">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </section>
+
+    <section id="profile" class="section hidden">
+        <h1>Profile</h1>
+        <p id="profileName">Name: </p>
+        <p id="profileJob">Job Title: </p>
+        <p id="playerLevel">Level: <span id="levelProgressContainer"></span></p>
+        <p id="playerXP">XP: </p>
+        <p id="playerRank">Rank: F</p>
+        <p id="streakCounter">Streak: 0 days</p>
+        <div class="progress-bar">
+            <div id="levelProgress" class="progress"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
