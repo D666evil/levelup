@@ -16,7 +16,7 @@ function showSection(id) {
   }
 }
 
-let playerLevel = 1;
+let playerLevel = 10;
 let playerXP = 0;
 let playerRank = 'F';
 let playerName = '';
