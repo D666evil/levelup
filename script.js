@@ -18,7 +18,7 @@ function showSection(id) {
 
 let playerLevel = 1;
 let playerXP = 0;
-let playerRank = 'S';
+let playerRank = 'F';
 let playerName = '';
 let playerJob = '';
 let streakCounter = 0;
