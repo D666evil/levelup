@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPlayerInfo();
     showSection('home');
     loadStreakCounter();
-});
+}); 
 
 function showSection(id) {
     const sections = document.querySelectorAll('.section');
